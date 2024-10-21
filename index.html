@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1 id="title">
+  <p>Coffee Preference Form</p>
+</h1>
+<p id="description">
+  In this survey, we want to know what your ideal coffee is. Lets begin!
+</p>
+<fieldset>
+<form id="survey-form">
+    <label for="coffee-grounds">Please input favorite coffee grounds: <div><input id="coffee-grounds"    type="text" class="inline" placeholder="Click to add text..." required/></label>
+    <label for="creamer-brand">Please select favorite creamer brand: <div><select id="dropdown" class="inline"required>
+            <option value="">(please select one)</option>
+            <option value="1">Coffee-Mate</option>
+            <option value="2">International Delight</option>
+            <option value="3">Natural Bliss</option>
+            <option value="4">Other</option>
+</select>
+    </label>
+      <label for="name" id="name-label">Please input your name: <div><input id="name"    type="text" class="inline" placeholder="Click to add text..." required></input></label>
+  <label for="email" id="email-label">Please input your email: <div><input id="email" type="email" class="inline" placeholder="Click to add text..." required></input></label>
+  <label for="age" id="number-label">Please input your age: <div> <input id="number" type="number" class="inline" placeholder="Click to change choice" min="13" max="120"></input></label>
+
+</form>
+</fieldset>
+<fieldset>
+  <form id="survey-form">
+  <legend>How long have you drank coffee? (required)</legend>
+        <label for="time-1"><input id="time-1" type="radio" name="account-type" class="inline" value="1" checked /> 1 year or less</label>
+        <label for="time-2"><input id="time-2" type="radio" name="account-type" class="inline" value="2" /> 2-5 years</label>
+        <label for="time-3"><input id="time-3" type="radio" name="account-type" class="inline" value="3" /> 6+ years</label>
+        <legend>Please Select your Coffeemaker Brand:</legend>
+<input type=checkbox value="1" id="check-1"> Keurig brand
+<div>
+<input type=checkbox value="2" id="check-2"> Breville brand
+<div>
+<input type=checkbox value="3" id="check-3"> Other
+<div>
+<label for="bio">Additional notes (optional)
+          <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Click here to start typing..."></textarea>
+        </label>
+<input type="submit" id="submit" value="Submit Form" />
+</form>
+</body>
+</html>
